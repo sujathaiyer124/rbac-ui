@@ -1,0 +1,192 @@
+/* General reset and base styles */
+/* General reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background-color: #0073e6;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    cursor: pointer;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.menu li:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+
+.menu li.active {
+    background-color: #003f7f;
+}
+
+
+.container {
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Section Styles */
+.manage-users,
+.addedit-user,
+#manage-roles,
+.dynamic-permissions {
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table th {
+    background-color: #0073e6;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Form Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+    .logout-btn{
+        background-color: #005bb5;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+    
+    .logout-btn li:hover {
+        background-color: #005bb5;
+    }
+    li .logout-btn{
+        display: block;
+        text-align:center;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        padding: 10px 15px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+
+    table th,
+    table td {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .menu li {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}

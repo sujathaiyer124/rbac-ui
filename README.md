@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# **RBAC-UI Management**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**A React-based user management system that allows admins to manage users and their roles, and users to update their profiles.**
 
-## Available Scripts
+## **Project Overview**
+This project provides an intuitive platform for managing users. Admins can add, edit, or delete users, assign roles, and control permissions, while end-users can update their own profile details. The platform is responsive, ensuring seamless usage across devices.
 
-In the project directory, you can run:
+### **Features**
+- **Admin Functionalities**:
+  - Add, edit, delete users.
+  - Assign roles and permissions.
+- **User Functionalities**:
+  - View personal details.
+  - Update username.
+- **Responsive**:
+  - Adapts seamlessly to mobile, tablet, and desktop screens.
+- **Role-Based Permissions**:
+  - Admin has full permissions (read, write, delete).
+  - Users have limited permissions (read only).
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Technologies Used**
+- **Frontend**: React.js, HTML, CSS
+- **Styling**: Custom CSS (responsive design)
+- **State Management**: React useState hook
+- **Responsive Design**: Media queries
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **Setup Instructions**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repository-name.git
+   cd repository-name 
+2 Install dependencies:
+    ```bash 
+    npm install
 
-### `npm run build`
+3. Start the development server:
+    ```bash 
+    npm start
+4.Open the app in your browser: Navigate to http://localhost:3000 in your web browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Usag**
+## **Login**:
+- Use pre-defined credentials:
+- **Admin**:
+   - Username: admin
+   - Password: admin123
+- **User**:
+    - Username: user
+    - Password: user123
+**Admin Dashboard:**
+Manage users: Add, edit, delete, and assign roles and permissions.
+View the user list with roles and statuses.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**User Dashboard:**
+View personal details.
+Logout functionality.

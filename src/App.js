@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from "react"
+import Login from './components/Login';
+import Admin from "./components/Admin";
+import User from "./components/User";
 import './App.css';
 
-function App() {
+
+export default function App() {
+  const[currentUser, setCurrentUser] = React.useState(null);
+  const [users, setUsers] = React.useState([]);
+  const handleLogin = (user,allUsers) => {
+    setCurrentUser(user);
+    setUsers(allUsers);
+  };
+
+  const handleLogout = () => {
+    setCurrentUser(null);
+};
+const [roles, setRoles] = React.useState([
+  { name: "Admin", permissions: ["Read", "Write", "Delete"] },
+  { name: "User", permissions: ["Read"] },
+]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {!currentUser ? (
+        <Login onLogin={handleLogin} roles={roles} />
+      ) : currentUser.role === "Admin" ? (
+        <Admin users={users} setUsers={setUsers}  logout={handleLogout}/>
+      ) : (
+        <User currentUser={currentUser} logout={handleLogout} />
+        
+      )}
     </div>
   );
-}
+};
 
-export default App;
+
