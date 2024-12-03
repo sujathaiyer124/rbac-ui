@@ -34,8 +34,9 @@ This project provides an intuitive platform for managing users. Admins can add, 
    ```bash
    git clone https://github.com/username/repository-name.git
    cd repository-name 
+
 2 Install dependencies:
-    ```bash 
+    ```bash    
     npm install
 
 3. Start the development server:
@@ -52,6 +53,8 @@ This project provides an intuitive platform for managing users. Admins can add, 
 - **User**:
     - Username: user
     - Password: user123
+
+
 **Admin Dashboard:**
 Manage users: Add, edit, delete, and assign roles and permissions.
 View the user list with roles and statuses.
