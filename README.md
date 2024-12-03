@@ -36,7 +36,7 @@ This project provides an intuitive platform for managing users. Admins can add, 
    cd repository-name 
 
 2 Install dependencies:
-    ```bash    
+    ```bash 
     npm install
 
 3. Start the development server:
@@ -44,7 +44,7 @@ This project provides an intuitive platform for managing users. Admins can add, 
     npm start
 4.Open the app in your browser: Navigate to http://localhost:3000 in your web browser.
 
-**Usag**
+**Usage**
 ## **Login**:
 - Use pre-defined credentials:
 - **Admin**:
@@ -62,3 +62,6 @@ View the user list with roles and statuses.
 **User Dashboard:**
 View personal details.
 Logout functionality.
+
+**Project Link:**
+https://rbac-ui-react-1234.netlify.app/
