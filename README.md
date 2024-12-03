@@ -35,7 +35,7 @@ This project provides an intuitive platform for managing users. Admins can add, 
    git clone https://github.com/username/repository-name.git
    cd repository-name 
 
-2 Install dependencies:
+2. Install dependencies:
     ```bash 
     npm install
 
